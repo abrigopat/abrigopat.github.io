@@ -1,0 +1,300 @@
+@import "stylesheet/partials";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //overflow: hidden;
+}
+
+
+
+// navbar - dan
+.nav-bar {
+    background-color: transparent;
+    margin-left: 5em;
+    //padding-right: 11em;
+    //margin-right: ;
+    width: 100vw;
+    height: 10%;
+    //padding-left: 5em;
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        .logo {
+            width: 80px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            //margin-left: 5em;
+            justify-content: flex-start;
+        }
+
+        nav {
+            text-align: right;
+            justify-content: flex-end;
+            margin-right: 7vw;
+
+            .contact {
+                //background-color: $secondary-color;
+                border: 0.25em solid $secondary-color;
+                border-radius: 2em;
+                width: 9em;
+                height: 3em;
+                text-align: center;
+                justify-content: center;
+                //padding-top: .15em;
+                transition: all 0.25s ease-in;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 30px;
+                    font-family: $primary-font;
+                }
+
+                &:hover {
+                    color: #fff;
+                    background-color: $secondary-color;
+                }
+            }
+
+            ul li {
+                margin-top: 20px;
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 50px;
+
+                .nav-a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 30px;
+                    font-family: $primary-font;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// social media icons
+
+.social {
+    margin-top: auto;
+    position: sticky;
+    margin-bottom: 0;
+    width: 5%;
+    //z-index: 2;
+
+    li,
+    a,
+    i {
+        border: none;
+        background-color: transparent;
+        color: $peachy;
+        margin-left: 1.3em;
+        padding-top: 1em;
+        list-style: none;
+        position: relative;
+        //z-index: 2;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+            //color: $primary-color;
+            background: linear-gradient(135deg, $primary-color, $sultry-red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            //transform: scale(.98);
+            transform: translateY(-5px);
+        }
+    }
+
+    .vl {
+        border-left: 2px solid $peachy;
+        height: 150px;
+        margin-left: 5.75em;
+        padding-top: 20px;
+        margin-top: 40px;
+        position: relative;
+        //z-index: 2;
+        transition: none;
+
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+.contact{
+    width: 100%;
+    margin-top: 15em;
+    font-family: $primary-font;
+
+    h1{
+        font-size: 8em;
+        color: $true-blue;
+        text-align: center;
+        margin-top: -.15em;
+    }
+
+    p{
+        font-size: 2.25em;
+        line-height: 1.15em;
+        color: #fff;
+        text-align: center;
+        width: 95%;
+    }
+
+    .contact-form{
+        //width: 50%;
+        //margin-top: 10em;
+        //float: right;
+        // margin-right: 3em;
+
+        #name{
+            color: $primary-color;
+            font-size: 1.25em;
+        }
+
+        #email{
+            font-size: 1.25em;
+        }
+
+        #message{
+            font-size: 1.25em;
+        }
+
+        .cta-btn{
+            @extend %cta-btn;
+            background-color: $secondary-color;
+            margin-top: 3vw;
+            margin-bottom: 5em;
+            color: #fff;
+            margin-left: -25em;
+    
+            a{
+                font-size: 2.25em;
+            }
+    
+            &:hover {
+                background-color: rgba(251, 130, 0, 0.8);
+            }
+    }    
+        ::placeholder{
+            color: peachpuff;
+        }
+    }
+}
+
+
+// 955px query starts here
+@media only screen and (max-width: 955px) {
+    .nav-bar {
+        margin-left: 1em;
+
+        nav {
+            display: none;
+        }
+
+        .navbar {
+            .logo {
+                width: 55px;
+                //margin-left: -5em;
+            }
+        }
+    }
+
+    .social {
+        display: none;
+    } 
+
+    .contact{
+        margin-top: 8em;
+
+        .contact-form{
+            .cta-btn{
+                margin-left: -5em;
+                margin-bottom: 5em;
+            }
+        }
+    }
+}
+// 955px query ends here
+
+// 768
+@media only screen and (max-width: 768px){
+    .contact{
+        margin-top: 8em;
+
+        h1{
+            font-size: 4em;
+        }
+
+        p{
+            font-size: 1.25em;
+        }
+        .contact-form{
+            .cta-btn{
+                margin-left: -3.5em;
+                margin-bottom: 5em;
+                width: 11em;
+                height: 3em;
+
+                a{
+                    font-size: 1.25em;
+                }
+            }
+            
+        }
+    }
+}
+
+// 320px query starts here
+@media only screen and (max-width: 320px) {
+    .nav-bar{
+        .navbar{
+            .logo{
+                width: 35px;
+                margin-left: -.95em;
+                margin-top: 0em;
+            }
+        }
+    }
+
+    .contact{
+        margin-top: 8em;
+
+        h1{
+            font-size: 3em;
+        }
+
+        p{
+            font-size: 1em;
+        }
+        .contact-form{
+            .cta-btn{
+                margin-left: -3.5em;
+                margin-bottom: 5em;
+                width: 11em;
+                height: 3em;
+
+                a{
+                    font-size: 1.25em;
+                }
+            }
+            
+        }
+    }
+}
+    

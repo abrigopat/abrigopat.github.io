@@ -1,0 +1,1542 @@
+@font-face {
+  font-family: HangryHand-Regular;
+  src: url(/font/HangryHand-Regular.ttf);
+}
+
+@font-face {
+  font-family: SilkFlowerDemo-Regular;
+  src: url(/font/SilkFlowerDemo-Regular.otf);
+}
+
+.footer .footer-con .cta-btn {
+  width: 18em;
+  height: 5em;
+  position: relative;
+  margin-top: -20vw;
+  border: none;
+  border-radius: 2.5em;
+  background-color: #ffc5c4;
+  font-family: "HangryHand-Regular";
+  transition: all 300ms ease-in;
+}
+
+.footer .footer-con .cta-btn a {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .footer-con .cta-btn:hover {
+  background-color: #fb8200;
+  /*
+        a{
+           font-size: 0px;
+        }
+        
+
+        &:hover::after {
+        content: attr(data-hover);
+
+            a{
+                font-size: 40px;
+                color: #fff;
+            }
+        }
+        */
+}
+
+#lokal-content .itinerary .accomodation .lokal-txt, #lokal-content .itinerary .food-reco .lokal-txt, #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt, #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt, #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt {
+  font-family: "HangryHand-Regular";
+}
+
+#lokal-content .itinerary .accomodation .lokal-txt h2, #lokal-content .itinerary .food-reco .lokal-txt h2, #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt h2, #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt h2, #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt h2 {
+  color: #fb8200;
+  font-size: 5em;
+}
+
+#lokal-content .itinerary .accomodation .lokal-txt p, #lokal-content .itinerary .food-reco .lokal-txt p, #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt p, #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt p, #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt p {
+  color: #fff;
+  font-size: 2.5em;
+  line-height: 1.25em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.nav-bar {
+  background-color: transparent;
+  margin-left: 5em;
+  width: 100vw;
+  height: 50%;
+}
+
+.nav-bar .navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-bar .navbar .logo {
+  width: 80px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  justify-content: flex-start;
+}
+
+.nav-bar .navbar nav {
+  text-align: right;
+  justify-content: flex-end;
+  margin-right: 7vw;
+}
+
+.nav-bar .navbar nav .contact {
+  border: 0.25em solid #fb8200;
+  border-radius: 2em;
+  width: 9em;
+  height: 3em;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.25s ease-in;
+}
+
+.nav-bar .navbar nav .contact a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-family: "HangryHand-Regular";
+}
+
+.nav-bar .navbar nav .contact:hover {
+  color: #fff;
+  background-color: #fb8200;
+}
+
+.nav-bar .navbar nav ul li {
+  margin-top: 20px;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.nav-bar .navbar nav ul li .nav-a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-family: "HangryHand-Regular";
+}
+
+.nav-bar .navbar nav ul li .nav-a:hover {
+  color: #fb8200;
+}
+
+.social {
+  margin-top: auto;
+  position: sticky;
+  margin-bottom: 0;
+  width: 5%;
+}
+
+.social li,
+.social a,
+.social i {
+  border: none;
+  background-color: transparent;
+  color: #fef6eb;
+  margin-left: 1.3em;
+  padding-top: 1em;
+  list-style: none;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.social li:hover,
+.social a:hover,
+.social i:hover {
+  background: linear-gradient(135deg, #ffc5c4, #ba3c40);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  transform: translateY(-5px);
+}
+
+.social .vl {
+  border-left: 2px solid #fef6eb;
+  height: 150px;
+  margin-left: 5.75em;
+  padding-top: 20px;
+  margin-top: 40px;
+  position: relative;
+  transition: none;
+}
+
+.social .vl:hover {
+  transform: none;
+}
+
+#lokal-landing .lokal-panel {
+  margin-top: 10em;
+  margin-bottom: 5em;
+}
+
+#lokal-landing .lokal-panel .title {
+  text-align: center;
+  color: #fb8200;
+  font-size: 10em;
+  font-family: "HangryHand-Regular";
+}
+
+#lokal-landing .lokal-panel .pictures {
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+#lokal-landing .lokal-panel .pictures ul,
+#lokal-landing .lokal-panel .pictures li {
+  list-style: none;
+  margin-bottom: 2em;
+}
+
+#lokal-landing .lokal-panel .pictures .polaroid1 {
+  margin-top: -1em;
+}
+
+#lokal-landing .lokal-panel .pictures .polaroid3 {
+  margin-top: -2em;
+}
+
+.lokal-ad-gif {
+  width: 100%;
+  position: relative;
+}
+
+#lokal-content {
+  justify-content: center;
+}
+
+#lokal-content .itinerary {
+  padding-top: 8em;
+}
+
+#lokal-content .itinerary .accomodation {
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+#lokal-content .itinerary .accomodation .lokal-txt {
+  margin-left: -20%;
+  margin-top: -1em;
+}
+
+#lokal-content .itinerary .food-reco {
+  margin-top: 8%;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+#lokal-content .itinerary .food-reco .food-pic {
+  float: right;
+}
+
+#lokal-content .itinerary .food-reco .lokal-txt {
+  margin-right: -20%;
+  text-align: right;
+}
+
+#lokal-content .itinerary .siargao-adv {
+  margin-top: 20%;
+}
+
+#lokal-content .itinerary .siargao-adv h1 {
+  color: #43a3a2;
+  font-family: "HangryHand-Regular";
+  font-size: 8em;
+  text-align: center;
+}
+
+#lokal-content .itinerary .siargao-adv .adventure1 {
+  margin-top: 10%;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+#lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt {
+  margin-left: -20%;
+  margin-top: -1em;
+}
+
+#lokal-content .itinerary .siargao-adv .adventure2 {
+  margin-top: 8%;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+#lokal-content .itinerary .siargao-adv .adventure2 .adventure-pic {
+  float: right;
+}
+
+#lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt {
+  margin-right: -20%;
+  text-align: right;
+}
+
+#lokal-content .itinerary .siargao-adv .adventure3 {
+  margin-top: 8%;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+#lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt {
+  margin-left: -20%;
+  margin-top: -1em;
+}
+
+.footer {
+  padding-bottom: 7.25em;
+  padding-top: 12em;
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+
+.footer .footer-con {
+  text-align: center;
+}
+
+.footer .footer-con h1 {
+  color: #43a3a2;
+  font-family: "HangryHand-Regular";
+  font-size: 10em;
+  justify-content: center;
+  align-content: center;
+  height: 1.25em;
+}
+
+.footer .footer-con p {
+  color: #fff;
+  font-family: "HangryHand-Regular";
+  font-size: 2.5em;
+}
+
+.footer .footer-con .cta-btn {
+  background-color: #fb8200;
+  margin-top: 3vw;
+}
+
+.footer .footer-con .cta-btn a {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .footer-con .cta-btn:hover {
+  background-color: rgba(251, 130, 0, 0.8);
+}
+
+@media only screen and (max-width: 1400px) {
+  #lokal-landing .lokal-panel .title {
+    font-size: 8.5em;
+    font-family: "HangryHand-Regular";
+  }
+  #lokal-landing .lokal-panel .picture .polaroid1 .pol1 {
+    object-fit: contain;
+    width: 25em;
+    height: 23em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid2 .pol2 {
+    position: relative;
+    object-fit: contain;
+    width: 25em;
+    height: 23em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid3 .pol3 {
+    object-fit: contain;
+    width: 25em;
+    height: 23em;
+  }
+  .footer {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 2.25em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav-bar {
+    margin-left: 1em;
+  }
+  .nav-bar nav {
+    display: none;
+  }
+  .nav-bar .navbar .logo {
+    width: 55px;
+  }
+  .social {
+    display: none;
+  }
+  #lokal-landing .lokal-panel .title {
+    font-size: 6.5em;
+    font-family: "HangryHand-Regular";
+  }
+  #lokal-landing .lokal-panel .picture {
+    margin-left: -4em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid1 .pol1 {
+    object-fit: contain;
+    width: 23em;
+    height: 21em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid2 .pol2 {
+    object-fit: contain;
+    width: 23em;
+    height: 21em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid3 .pol3 {
+    object-fit: contain;
+    width: 23em;
+    height: 21em;
+  }
+  #lokal-content .itinerary .accomodation #pic1 {
+    object-fit: contain;
+    width: 25em;
+    height: 25em;
+    margin-right: 2%;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt {
+    margin-left: -20%;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt h2 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt p {
+    font-size: 2em;
+  }
+  #lokal-content .itinerary .food-reco #pic2 {
+    object-fit: contain;
+    width: 25em;
+    height: 25em;
+    margin-left: 2%;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt {
+    margin-right: -20%;
+    margin-top: -1%;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt h2 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt p {
+    font-size: 2em;
+  }
+  #lokal-content .itinerary .siargao-adv h1 {
+    font-size: 6em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .adventure-pic {
+    object-fit: contain;
+    width: 25em;
+    height: 25em;
+    margin-right: 2%;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt {
+    margin-left: -20%;
+    margin-top: 0em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt h2 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt p {
+    font-size: 2em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .adventure-pic {
+    object-fit: contain;
+    width: 25em;
+    height: 25em;
+    margin-left: 2%;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt {
+    margin-right: -20%;
+    margin-top: -1%;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt h2 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt p {
+    font-size: 2em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .adventure-pic {
+    object-fit: contain;
+    width: 25em;
+    height: 25em;
+    margin-right: 2%;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt {
+    margin-left: -20%;
+    margin-top: 0em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt h2 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt p {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  #lokal-landing .lokal-panel .title {
+    font-size: 6.25em;
+    font-family: "HangryHand-Regular";
+  }
+  #lokal-landing .lokal-panel .picture {
+    margin-left: -13em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid1 .pol1 {
+    object-fit: contain;
+    width: 23em;
+    height: 21em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid2 .pol2 {
+    object-fit: contain;
+    width: 23em;
+    height: 21em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid3 .pol3 {
+    object-fit: contain;
+    width: 23em;
+    height: 21em;
+  }
+  #lokal-content .itinerary .accomodation #pic1 {
+    object-fit: contain;
+    width: 25em;
+    height: 25em;
+    margin-left: -5em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt {
+    margin-left: -10%;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt h2 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt p {
+    font-size: 1.65em;
+  }
+  #lokal-content .itinerary .food-reco #pic2 {
+    object-fit: contain;
+    width: 25em;
+    height: 25em;
+    margin-left: 2%;
+    margin-right: -5em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt {
+    margin-right: -10%;
+    padding-right: 5em;
+    margin-top: -2%;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt h2 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt p {
+    font-size: 1.65em;
+    width: 110%;
+  }
+  #lokal-content .itinerary .siargao-adv h1 {
+    font-size: 6em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .adventure-pic {
+    object-fit: contain;
+    width: 25em;
+    height: 25em;
+    margin-left: -5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt {
+    margin-left: -10%;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt h2 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt p {
+    font-size: 1.65em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .adventure-pic {
+    object-fit: contain;
+    width: 25em;
+    height: 25em;
+    margin-left: 2%;
+    margin-right: -5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt {
+    margin-right: -10%;
+    padding-right: 5em;
+    margin-top: -2%;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt h2 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt p {
+    font-size: 1.65em;
+    width: 110%;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .adventure-pic {
+    object-fit: contain;
+    width: 25em;
+    height: 25em;
+    margin-left: -5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt {
+    margin-left: -10%;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt h2 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt p {
+    font-size: 1.65em;
+  }
+}
+
+@media only screen and (max-width: 955px) {
+  #lokal-landing .lokal-panel {
+    padding-bottom: 0em;
+  }
+  #lokal-landing .lokal-panel .title {
+    font-size: 6.25em;
+    margin-bottom: 0.5em;
+    font-family: "HangryHand-Regular";
+  }
+  #lokal-landing .lokal-panel .picture {
+    margin-left: -8em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid1 .pol1 {
+    object-fit: contain;
+    width: 20em;
+    height: 18em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid2 .pol2 {
+    object-fit: contain;
+    width: 20em;
+    height: 18em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid3 .pol3 {
+    object-fit: contain;
+    width: 20em;
+    height: 18em;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  #lokal-landing .lokal-panel {
+    padding-bottom: 0em;
+  }
+  #lokal-landing .lokal-panel .title {
+    font-size: 6.25em;
+    font-family: "HangryHand-Regular";
+  }
+  #lokal-landing .lokal-panel .pictures {
+    margin-left: 5em;
+  }
+  #lokal-landing .lokal-panel .pictures .polaroid1 .pol1 {
+    object-fit: contain;
+    width: 18em;
+    height: 16em;
+  }
+  #lokal-landing .lokal-panel .pictures .polaroid2 .pol2 {
+    object-fit: contain;
+    width: 18em;
+    height: 16em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .pictures .polaroid3 .pol3 {
+    object-fit: contain;
+    width: 18em;
+    height: 16em;
+  }
+  .footer {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .footer .footer-con h1 {
+    font-size: 8.5em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    font-size: 2.25em;
+  }
+  .footer .footer-con .cta-btn {
+    width: 17em;
+    height: 4.5em;
+  }
+  .footer .footer-con .cta-btn a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer .footer-con .cta-btn:hover {
+    background-color: rgba(251, 130, 0, 0.8);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #lokal-landing .lokal-panel {
+    padding-bottom: 0em;
+  }
+  #lokal-landing .lokal-panel .title {
+    font-size: 6.25em;
+    font-family: "HangryHand-Regular";
+  }
+  #lokal-landing .lokal-panel .picture {
+    margin-left: -13em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid1 .pol1 {
+    object-fit: contain;
+    width: 18em;
+    height: 16em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid2 .pol2 {
+    object-fit: contain;
+    width: 18em;
+    height: 16em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid3 .pol3 {
+    object-fit: contain;
+    width: 18em;
+    height: 16em;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #lokal-landing .lokal-panel {
+    padding-bottom: 0em;
+  }
+  #lokal-landing .lokal-panel .title {
+    font-size: 5.75em;
+    font-family: "HangryHand-Regular";
+  }
+  #lokal-landing .lokal-panel .picture {
+    margin-left: -9em;
+    margin-top: 5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid1 .pol1 {
+    object-fit: contain;
+    width: 15em;
+    height: 13em;
+    margin-right: -4em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid2 .pol2 {
+    object-fit: contain;
+    width: 15em;
+    height: 13em;
+    margin-right: -4em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid3 .pol3 {
+    object-fit: contain;
+    width: 15em;
+    height: 13em;
+  }
+  #lokal-content .itinerary .accomodation #pic1 {
+    object-fit: contain;
+    width: 20em;
+    height: 20em;
+    margin-left: 7em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 0.5em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt p {
+    font-size: 1.25em;
+    width: 20em;
+    margin-left: 2.25em;
+  }
+  #lokal-content .itinerary .food-reco #pic2 {
+    object-fit: contain;
+    width: 20em;
+    height: 20em;
+    margin-right: 5em;
+    position: relative;
+    margin-top: -39em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt {
+    margin-left: 3%;
+    padding-top: 25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 2em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt p {
+    font-size: 1.25em;
+    width: 20em;
+    margin-left: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv h1 {
+    font-size: 3.5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .adventure-pic {
+    object-fit: contain;
+    width: 20em;
+    height: 20em;
+    margin-left: 7em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 0.5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt p {
+    font-size: 1.25em;
+    width: 20em;
+    margin-left: 2.25em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .adventure-pic {
+    object-fit: contain;
+    width: 20em;
+    height: 20em;
+    margin-top: -37em;
+    margin-right: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt {
+    margin-left: 3%;
+    text-align: center;
+    padding-top: 23em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 2em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt p {
+    font-size: 1.25em;
+    width: 20em;
+    margin-left: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .adventure-pic {
+    object-fit: contain;
+    width: 20em;
+    height: 20em;
+    margin-left: 7em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 0.5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt p {
+    font-size: 1.25em;
+    width: 20em;
+    margin-left: 2.25em;
+  }
+  .footer .footer-con h1 {
+    font-size: 8em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 2em;
+    line-height: 1.15em;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .footer .footer-con h1 {
+    font-size: 7em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 1.75em;
+    line-height: 1.15em;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  #lokal-landing .lokal-panel .title {
+    font-size: 4.5em;
+    font-family: "HangryHand-Regular";
+  }
+  #lokal-landing .lokal-panel .picture {
+    margin-left: -7em;
+    margin-top: 5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid1 .pol1 {
+    object-fit: contain;
+    width: 13em;
+    height: 11em;
+    margin-right: -3em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid2 .pol2 {
+    object-fit: contain;
+    width: 13em;
+    height: 11em;
+    margin-right: -3em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid3 .pol3 {
+    object-fit: contain;
+    width: 13em;
+    height: 11em;
+  }
+  #lokal-content .itinerary .accomodation #pic1 {
+    object-fit: contain;
+    width: 18em;
+    height: 18em;
+    margin-left: 7em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: -0.5em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt p {
+    font-size: 1.25em;
+    width: 18em;
+    margin-left: 3em;
+  }
+  #lokal-content .itinerary .food-reco #pic2 {
+    object-fit: contain;
+    width: 18em;
+    height: 18em;
+    margin-right: 7em;
+    position: relative;
+    margin-top: -39em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt {
+    margin-left: 3%;
+    padding-top: 25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 1em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt p {
+    font-size: 1.25em;
+    width: 18em;
+    margin-left: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv h1 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .adventure-pic {
+    object-fit: contain;
+    width: 18em;
+    height: 18em;
+    margin-left: 7.5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 0em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt p {
+    font-size: 1.25em;
+    width: 18em;
+    margin-left: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .adventure-pic {
+    object-fit: contain;
+    width: 18em;
+    height: 18em;
+    margin-top: -37em;
+    margin-right: 6em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt {
+    margin-left: 3%;
+    text-align: center;
+    padding-top: 23em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 1.25em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt p {
+    font-size: 1.25em;
+    width: 18em;
+    margin-left: 3.25em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .adventure-pic {
+    object-fit: contain;
+    width: 18em;
+    height: 18em;
+    margin-left: 8em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 0.25em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt p {
+    font-size: 1.25em;
+    width: 18em;
+    margin-left: 3.25em;
+  }
+  .footer .footer-con h1 {
+    font-size: 6em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 1.75em;
+    line-height: 1.15em;
+  }
+  .footer .footer-con .cta-btn {
+    width: 16em;
+    height: 4em;
+  }
+  .footer .footer-con .cta-btn a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer .footer-con .cta-btn:hover {
+    background-color: rgba(251, 130, 0, 0.8);
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  #lokal-landing .lokal-panel .title {
+    font-size: 4.5em;
+    font-family: "HangryHand-Regular";
+  }
+  #lokal-landing .lokal-panel .picture {
+    margin-left: -7.75em;
+    margin-top: 5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid1 .pol1 {
+    object-fit: contain;
+    width: 12em;
+    height: 10em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid2 .pol2 {
+    object-fit: contain;
+    width: 12em;
+    height: 10em;
+    margin-right: -5em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid3 .pol3 {
+    object-fit: contain;
+    width: 12em;
+    height: 10em;
+  }
+  #lokal-content .itinerary .accomodation #pic1 {
+    object-fit: contain;
+    width: 18em;
+    height: 18em;
+    margin-left: 5em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: -0.25em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt p {
+    font-size: 1.25em;
+    width: 18em;
+    margin-left: 1.5em;
+  }
+  #lokal-content .itinerary .food-reco #pic2 {
+    object-fit: contain;
+    width: 18em;
+    height: 18em;
+    margin-right: 4.25em;
+    position: relative;
+    margin-top: -39em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt {
+    margin-left: 3%;
+    padding-top: 25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 1.25em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt p {
+    font-size: 1.25em;
+    width: 17em;
+    margin-left: 2em;
+  }
+  #lokal-content .itinerary .siargao-adv h1 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .adventure-pic {
+    object-fit: contain;
+    width: 18em;
+    height: 18em;
+    margin-left: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 0em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt p {
+    font-size: 1.25em;
+    width: 17em;
+    margin-left: 2em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .adventure-pic {
+    object-fit: contain;
+    width: 18em;
+    height: 18em;
+    margin-top: -37em;
+    margin-right: 4.5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt {
+    margin-left: 3%;
+    text-align: center;
+    padding-top: 23em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 1.25em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt p {
+    font-size: 1.25em;
+    width: 17em;
+    margin-left: 1.75em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .adventure-pic {
+    object-fit: contain;
+    width: 18em;
+    height: 18em;
+    margin-left: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 0em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt p {
+    font-size: 1.25em;
+    width: 17em;
+    margin-left: 1.75em;
+  }
+  .footer {
+    margin-bottom: 3em;
+  }
+  .footer .footer-con h1 {
+    font-size: 5em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 1.5em;
+    line-height: 1.15em;
+  }
+  .footer .footer-con .cta-btn {
+    width: 15em;
+    height: 3.75em;
+  }
+  .footer .footer-con .cta-btn a {
+    font-size: 1.85em;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer .footer-con .cta-btn:hover {
+    background-color: rgba(251, 130, 0, 0.8);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #lokal-landing .lokal-panel .title {
+    font-size: 3em;
+    font-family: "HangryHand-Regular";
+  }
+  #lokal-landing .lokal-panel .pictures .polaroid1 .pol1 {
+    object-fit: contain;
+    width: 10em;
+    height: 8em;
+    margin-right: -3em;
+  }
+  #lokal-landing .lokal-panel .pictures .polaroid2 .pol2 {
+    object-fit: contain;
+    width: 10em;
+    height: 8em;
+    margin-right: -3em;
+  }
+  #lokal-landing .lokal-panel .pictures .polaroid3 .pol3 {
+    object-fit: contain;
+    width: 10em;
+    height: 8em;
+  }
+  #lokal-content .itinerary .accomodation #pic1 {
+    object-fit: contain;
+    width: 17em;
+    height: 17em;
+    margin-left: 4em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: -0.25em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt p {
+    font-size: 1.25em;
+    width: 16em;
+    margin-left: 1.5em;
+  }
+  #lokal-content .itinerary .food-reco #pic2 {
+    object-fit: contain;
+    width: 17em;
+    height: 17em;
+    margin-right: 4em;
+    position: relative;
+    margin-top: -39em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt {
+    margin-left: 3%;
+    padding-top: 25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 1.25em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt p {
+    font-size: 1.25em;
+    width: 16em;
+    margin-left: 1.5em;
+  }
+  #lokal-content .itinerary .siargao-adv h1 {
+    font-size: 3em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .adventure-pic {
+    object-fit: contain;
+    width: 17em;
+    height: 17em;
+    margin-left: 4em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 0em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt p {
+    font-size: 1.25em;
+    width: 16em;
+    margin-left: 1.5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .adventure-pic {
+    object-fit: contain;
+    width: 17em;
+    height: 17em;
+    margin-top: -37em;
+    margin-right: 4em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt {
+    margin-left: 3%;
+    text-align: center;
+    padding-top: 23em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 1.25em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt p {
+    font-size: 1.25em;
+    width: 16em;
+    margin-left: 1.5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .adventure-pic {
+    object-fit: contain;
+    width: 17em;
+    height: 17em;
+    margin-left: 4em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt h2 {
+    font-size: 2.5em;
+    margin-left: 0em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt p {
+    font-size: 1.25em;
+    width: 16em;
+    margin-left: 1.5em;
+  }
+  .footer {
+    margin-top: -10em;
+    padding-top: 5em;
+  }
+  .footer .footer-con h1 {
+    font-size: 3.5em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 1em;
+    line-height: 1.15em;
+  }
+  .footer .footer-con .cta-btn {
+    width: 10em;
+    height: 2.5em;
+  }
+  .footer .footer-con .cta-btn a {
+    font-size: 1.15em;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer .footer-con .cta-btn:hover {
+    background-color: rgba(251, 130, 0, 0.8);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .nav-bar .navbar .logo {
+    width: 35px;
+    margin-left: -0.95em;
+    margin-top: 0em;
+  }
+  #lokal-landing .lokal-panel {
+    padding-bottom: -5em;
+  }
+  #lokal-landing .lokal-panel .title {
+    font-size: 2em;
+    font-family: "HangryHand-Regular";
+  }
+  #lokal-landing .lokal-panel .picture {
+    margin-left: -7em;
+    margin-top: 3em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid1 .pol1 {
+    object-fit: contain;
+    width: 8em;
+    height: 6em;
+    margin-right: -3em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid2 .pol2 {
+    object-fit: contain;
+    width: 8em;
+    height: 6em;
+    margin-right: -3em;
+  }
+  #lokal-landing .lokal-panel .picture .polaroid3 .pol3 {
+    object-fit: contain;
+    width: 8em;
+    height: 6em;
+  }
+  #lokal-content .itinerary .accomodation #pic1 {
+    object-fit: contain;
+    width: 14em;
+    height: 14em;
+    margin-left: 1.75em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt h2 {
+    font-size: 2em;
+    margin-left: -0.75em;
+  }
+  #lokal-content .itinerary .accomodation .lokal-txt p {
+    font-size: 1em;
+    width: 15em;
+    margin-left: 1em;
+  }
+  #lokal-content .itinerary .food-reco #pic2 {
+    object-fit: contain;
+    width: 14em;
+    height: 14em;
+    margin-right: 1.75em;
+    position: relative;
+    margin-top: -35em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt {
+    margin-left: 3%;
+    padding-top: 25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt h2 {
+    font-size: 2em;
+    margin-left: 1.25em;
+  }
+  #lokal-content .itinerary .food-reco .lokal-txt p {
+    font-size: 1em;
+    width: 15em;
+    margin-left: 1em;
+  }
+  #lokal-content .itinerary .siargao-adv h1 {
+    font-size: 2em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .adventure-pic {
+    object-fit: contain;
+    width: 14em;
+    height: 14em;
+    margin-left: 1.75em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt h2 {
+    font-size: 2em;
+    margin-left: -0.75em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure1 .lokal-txt p {
+    font-size: 1em;
+    width: 15em;
+    margin-left: 1em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .adventure-pic {
+    object-fit: contain;
+    width: 14em;
+    height: 14em;
+    margin-top: -32em;
+    margin-right: 1.75em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt {
+    margin-left: 3%;
+    text-align: center;
+    padding-top: 18em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt h2 {
+    font-size: 2em;
+    margin-left: 1.25em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure2 .lokal-txt p {
+    font-size: 1em;
+    width: 16em;
+    margin-left: 0em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 {
+    margin-top: 5em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .adventure-pic {
+    object-fit: contain;
+    width: 14em;
+    height: 14em;
+    margin-left: 1.75em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt {
+    margin-left: 3%;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt h2 {
+    font-size: 2em;
+    margin-left: -0.75em;
+  }
+  #lokal-content .itinerary .siargao-adv .adventure3 .lokal-txt p {
+    font-size: 1em;
+    width: 15em;
+    margin-left: 1em;
+  }
+  .footer {
+    margin-top: -10em;
+    padding-top: 5em;
+  }
+  .footer .footer-con h1 {
+    font-size: 3em;
+    height: 1.25em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

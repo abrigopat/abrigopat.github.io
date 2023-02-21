@@ -1,0 +1,269 @@
+@font-face {
+  font-family: HangryHand-Regular;
+  src: url(/font/HangryHand-Regular.ttf);
+}
+
+@font-face {
+  font-family: SilkFlowerDemo-Regular;
+  src: url(/font/SilkFlowerDemo-Regular.otf);
+}
+
+.contact .contact-form .cta-btn {
+  width: 18em;
+  height: 5em;
+  position: relative;
+  margin-top: -20vw;
+  border: none;
+  border-radius: 2.5em;
+  background-color: #ffc5c4;
+  font-family: "HangryHand-Regular";
+  transition: all 300ms ease-in;
+}
+
+.contact .contact-form .cta-btn a {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact .contact-form .cta-btn:hover {
+  background-color: #fb8200;
+  /*
+        a{
+           font-size: 0px;
+        }
+        
+
+        &:hover::after {
+        content: attr(data-hover);
+
+            a{
+                font-size: 40px;
+                color: #fff;
+            }
+        }
+        */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  background-color: transparent;
+  margin-left: 5em;
+  width: 100vw;
+  height: 10%;
+}
+
+.nav-bar .navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-bar .navbar .logo {
+  width: 80px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  justify-content: flex-start;
+}
+
+.nav-bar .navbar nav {
+  text-align: right;
+  justify-content: flex-end;
+  margin-right: 7vw;
+}
+
+.nav-bar .navbar nav .contact {
+  border: 0.25em solid #fb8200;
+  border-radius: 2em;
+  width: 9em;
+  height: 3em;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.25s ease-in;
+}
+
+.nav-bar .navbar nav .contact a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-family: "HangryHand-Regular";
+}
+
+.nav-bar .navbar nav .contact:hover {
+  color: #fff;
+  background-color: #fb8200;
+}
+
+.nav-bar .navbar nav ul li {
+  margin-top: 20px;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.nav-bar .navbar nav ul li .nav-a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-family: "HangryHand-Regular";
+}
+
+.nav-bar .navbar nav ul li .nav-a:hover {
+  color: #fb8200;
+}
+
+.social {
+  margin-top: auto;
+  position: sticky;
+  margin-bottom: 0;
+  width: 5%;
+}
+
+.social li,
+.social a,
+.social i {
+  border: none;
+  background-color: transparent;
+  color: #fef6eb;
+  margin-left: 1.3em;
+  padding-top: 1em;
+  list-style: none;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.social li:hover,
+.social a:hover,
+.social i:hover {
+  background: linear-gradient(135deg, #ffc5c4, #ba3c40);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  transform: translateY(-5px);
+}
+
+.social .vl {
+  border-left: 2px solid #fef6eb;
+  height: 150px;
+  margin-left: 5.75em;
+  padding-top: 20px;
+  margin-top: 40px;
+  position: relative;
+  transition: none;
+}
+
+.social .vl:hover {
+  transform: none;
+}
+
+.contact {
+  width: 100%;
+  margin-top: 15em;
+  font-family: "HangryHand-Regular";
+}
+
+.contact h1 {
+  font-size: 8em;
+  color: #43a3a2;
+  text-align: center;
+  margin-top: -.15em;
+}
+
+.contact p {
+  font-size: 2.25em;
+  line-height: 1.15em;
+  color: #fff;
+  text-align: center;
+  width: 95%;
+}
+
+.contact .contact-form #name {
+  color: #ffc5c4;
+  font-size: 1.25em;
+}
+
+.contact .contact-form #email {
+  font-size: 1.25em;
+}
+
+.contact .contact-form #message {
+  font-size: 1.25em;
+}
+
+.contact .contact-form .cta-btn {
+  background-color: #fb8200;
+  margin-top: 3vw;
+  margin-bottom: 5em;
+  color: #fff;
+  margin-left: -25em;
+}
+
+.contact .contact-form .cta-btn a {
+  font-size: 2.25em;
+}
+
+.contact .contact-form .cta-btn:hover {
+  background-color: rgba(251, 130, 0, 0.8);
+}
+
+.contact .contact-form ::placeholder {
+  color: peachpuff;
+}
+
+@media only screen and (max-width: 955px) {
+  .nav-bar {
+    margin-left: 1em;
+  }
+  .nav-bar nav {
+    display: none;
+  }
+  .nav-bar .navbar .logo {
+    width: 55px;
+  }
+  .social {
+    display: none;
+  }
+  .contact {
+    margin-top: 8em;
+  }
+  .contact .contact-form .cta-btn {
+    margin-left: -5em;
+    margin-bottom: 5em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .nav-bar .navbar .logo {
+    width: 35px;
+    margin-left: -.95em;
+    margin-top: 0em;
+  }
+  .contact {
+    margin-top: 8em;
+  }
+  .contact h1 {
+    font-size: 4em;
+  }
+  .contact p {
+    font-size: 1.25em;
+  }
+  .contact .contact-form .cta-btn {
+    margin-left: -3.5em;
+    margin-bottom: 5em;
+    width: 11em;
+    height: 3em;
+  }
+  .contact .contact-form .cta-btn a {
+    font-size: 1.25em;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

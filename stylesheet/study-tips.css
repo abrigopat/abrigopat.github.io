@@ -1,0 +1,511 @@
+@font-face {
+  font-family: HangryHand-Regular;
+  src: url(/font/HangryHand-Regular.ttf);
+}
+
+@font-face {
+  font-family: SilkFlowerDemo-Regular;
+  src: url(/font/SilkFlowerDemo-Regular.otf);
+}
+
+.footer .footer-con .cta-btn {
+  width: 18em;
+  height: 5em;
+  position: relative;
+  margin-top: -20vw;
+  border: none;
+  border-radius: 2.5em;
+  background-color: #ffc5c4;
+  font-family: "HangryHand-Regular";
+  transition: all 300ms ease-in;
+}
+
+.footer .footer-con .cta-btn a {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .footer-con .cta-btn:hover {
+  background-color: #fb8200;
+  /*
+        a{
+           font-size: 0px;
+        }
+        
+
+        &:hover::after {
+        content: attr(data-hover);
+
+            a{
+                font-size: 40px;
+                color: #fff;
+            }
+        }
+        */
+}
+
+.nav-bar .navbar nav ul li .nav-a, .nav-bar .navbar nav ul li .nav-b, .nav-bar .navbar nav ul li .nav-c {
+  text-decoration: none;
+  color: #ffc5c4;
+  font-size: 30px;
+  font-family: "HangryHand-Regular";
+}
+
+.nav-bar .navbar nav ul li .nav-a:hover, .nav-bar .navbar nav ul li .nav-b:hover, .nav-bar .navbar nav ul li .nav-c:hover {
+  color: #fb8200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3a58f;
+  overflow-x: hidden;
+}
+
+.nav-bar {
+  padding-left: 5em;
+  width: 100vw;
+  height: 12%;
+}
+
+.nav-bar .navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: auto;
+}
+
+.nav-bar .navbar .logo {
+  width: 80px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  justify-content: flex-start;
+}
+
+.nav-bar .navbar nav {
+  text-align: right;
+  justify-content: flex-end;
+  margin-right: 3.38em;
+}
+
+.nav-bar .navbar nav .contact {
+  border: 0.25em solid #fb8200;
+  border-radius: 2em;
+  width: 9em;
+  height: 3em;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.25s ease-in;
+}
+
+.nav-bar .navbar nav .contact a {
+  text-decoration: none;
+  color: #ffc5c4;
+  font-size: 30px;
+  font-family: "HangryHand-Regular";
+}
+
+.nav-bar .navbar nav .contact:hover {
+  background-color: #fb8200;
+}
+
+.nav-bar .navbar nav .contact:hover a {
+  color: #fff;
+}
+
+.nav-bar .navbar nav ul li {
+  margin-top: 20px;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.social {
+  margin-top: auto;
+  position: sticky;
+  margin-bottom: 0;
+  width: 5%;
+}
+
+.social li,
+.social a,
+.social i {
+  border: none;
+  background-color: transparent;
+  color: #fef6eb;
+  margin-left: 1.3em;
+  padding-top: 1em;
+  list-style: none;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.social li:hover,
+.social a:hover,
+.social i:hover {
+  background: linear-gradient(135deg, #ffc5c4, #ba3c40);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  transform: translateY(-5px);
+}
+
+.social .vl {
+  border-left: 2px solid #fef6eb;
+  height: 150px;
+  margin-left: 5.75em;
+  padding-top: 20px;
+  margin-top: 40px;
+  position: relative;
+  transition: none;
+}
+
+.social .vl:hover {
+  transform: none;
+}
+
+.tips-header {
+  padding-top: 5%;
+}
+
+.tips-header {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#study-tips {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  animation: fadeIn;
+  animation-duration: 3s;
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+
+#study-tips li {
+  list-style: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#study-tips li:hover {
+  transform: scale(0.98);
+  transform: translateY(-5px);
+}
+
+#study-tips .tips-list {
+  position: relative;
+  margin-top: 6%;
+  display: flex;
+  justify-content: center;
+}
+
+#study-tips .tips-list .tip-container {
+  background-color: #ffc5c4;
+  margin-left: 3em;
+  width: 25em;
+  padding-top: 1.75em;
+  margin-top: 1em;
+}
+
+#study-tips .tips-list .tip-container img {
+  object-fit: contain;
+  width: 20em;
+  height: 20em;
+}
+
+#study-tips .tips-list .tip-container .tip-txt {
+  font-family: "HangryHand-Regular";
+}
+
+#study-tips .tips-list .tip-container .tip-txt h3 {
+  font-size: 2.5em;
+  color: #fb8200;
+  margin-top: 5%;
+  padding-left: 0.5em;
+}
+
+#study-tips .tips-list .tip-container .tip-txt p {
+  font-size: 1.65em;
+  color: #fff;
+  line-height: 1em;
+  width: 13em;
+  padding-left: 0.75em;
+}
+
+.footer {
+  padding-bottom: 8em;
+  padding-top: 11.75em;
+  animation: fadeIn;
+  animation-duration: 3s;
+  background-color: #ffc5c4;
+  height: 100vh;
+}
+
+.footer .footer-con {
+  text-align: center;
+}
+
+.footer .footer-con h1 {
+  color: #43a3a2;
+  font-family: "HangryHand-Regular";
+  font-size: 10em;
+  position: relative;
+  height: 1.25em;
+}
+
+.footer .footer-con p {
+  color: #fff;
+  font-family: "HangryHand-Regular";
+  font-size: 2.5em;
+}
+
+.footer .footer-con .cta-btn {
+  background-color: #fb8200;
+  margin-top: 3vw;
+}
+
+.footer .footer-con .cta-btn a {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .footer-con .cta-btn:hover {
+  background-color: rgba(251, 130, 0, 0.8);
+}
+
+@media only screen and (max-width: 1400px) {
+  .footer {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 2.25em;
+  }
+}
+
+@media only screen and (max-width: 955px) {
+  .nav-bar {
+    margin-left: 1em;
+  }
+  .nav-bar nav {
+    display: none;
+  }
+  .nav-bar .navbar .logo {
+    width: 55px;
+    margin-left: -5em;
+  }
+  .social {
+    display: none;
+  }
+  .footer {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 45em;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .footer {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 45em;
+  }
+  .footer .footer-con h1 {
+    font-size: 8.5em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    font-size: 2.25em;
+  }
+  .footer .footer-con .cta-btn {
+    width: 17em;
+    height: 4.5em;
+  }
+  .footer .footer-con .cta-btn a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer .footer-con .cta-btn:hover {
+    background-color: rgba(251, 130, 0, 0.8);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .footer .footer-con h1 {
+    font-size: 8em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 2em;
+    line-height: 1.15em;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .footer {
+    padding-bottom: 25em;
+  }
+  .footer .footer-con h1 {
+    font-size: 7em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 1.75em;
+    line-height: 1.15em;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .tips-header {
+    padding-top: 3.25em;
+  }
+  .footer .footer-con h1 {
+    font-size: 6em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 1.75em;
+    line-height: 1.15em;
+  }
+  .footer .footer-con .cta-btn {
+    width: 16em;
+    height: 4em;
+  }
+  .footer .footer-con .cta-btn a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer .footer-con .cta-btn:hover {
+    background-color: rgba(251, 130, 0, 0.8);
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  #study-tips .tips-list .tip-container {
+    width: 18em;
+    padding-top: 1.5em;
+    margin-left: 1em;
+  }
+  #study-tips .tips-list .tip-container img {
+    object-fit: contain;
+    width: 15em;
+    height: 15em;
+  }
+  #study-tips .tips-list .tip-container .tip-txt {
+    margin-left: -1em;
+  }
+  #study-tips .tips-list .tip-container .tip-txt h3 {
+    font-size: 1.75em;
+  }
+  #study-tips .tips-list .tip-container .tip-txt p {
+    font-size: 1.25em;
+    width: 13em;
+  }
+  .footer {
+    padding-bottom: 15em;
+  }
+  .footer .footer-con h1 {
+    font-size: 5em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 1.5em;
+    line-height: 1.15em;
+  }
+  .footer .footer-con .cta-btn {
+    width: 15em;
+    height: 3.75em;
+  }
+  .footer .footer-con .cta-btn a {
+    font-size: 1.85em;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer .footer-con .cta-btn:hover {
+    background-color: rgba(251, 130, 0, 0.8);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #study-tips .tips-list .tip-container {
+    width: 15em;
+    padding-top: 1.5em;
+    margin-left: 1em;
+  }
+  #study-tips .tips-list .tip-container img {
+    object-fit: contain;
+    width: 12em;
+    height: 12em;
+  }
+  #study-tips .tips-list .tip-container .tip-txt {
+    margin-left: -1em;
+  }
+  #study-tips .tips-list .tip-container .tip-txt h3 {
+    font-size: 1.75em;
+  }
+  #study-tips .tips-list .tip-container .tip-txt p {
+    font-size: 1em;
+    width: 13em;
+  }
+  .footer {
+    padding-top: 10em;
+    padding-bottom: 5em;
+  }
+  .footer .footer-con h1 {
+    font-size: 3.5em;
+    height: 1.25em;
+  }
+  .footer .footer-con p {
+    color: #fff;
+    font-family: "HangryHand-Regular";
+    font-size: 1em;
+    line-height: 1.15em;
+  }
+  .footer .footer-con .cta-btn {
+    width: 10em;
+    height: 2.5em;
+  }
+  .footer .footer-con .cta-btn a {
+    font-size: 1.15em;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer .footer-con .cta-btn:hover {
+    background-color: rgba(251, 130, 0, 0.8);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .footer {
+    margin-top: -10em;
+    padding-top: 5em;
+  }
+  .footer .footer-con h1 {
+    font-size: 3em;
+    height: 1.25em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,487 @@
+@font-face {
+  font-family: HangryHand-Regular;
+  src: url(/font/HangryHand-Regular.ttf);
+}
+
+@font-face {
+  font-family: SilkFlowerDemo-Regular;
+  src: url(/font/SilkFlowerDemo-Regular.otf);
+}
+
+#book-movie .main-txt, #study-tips .main-txt {
+  display: flex;
+  position: relative;
+  font-family: "SilkFlowerDemo-Regular";
+  color: #fef6eb;
+  letter-spacing: 20%;
+  font-weight: bold;
+  font-size: 7.5vw;
+  line-height: 1.15em;
+  letter-spacing: 5px;
+  animation: bounce;
+  animation-duration: 3s;
+  margin-bottom: auto;
+  margin-top: -6.5em;
+}
+
+#book-movie .cta-btn, #study-tips .cta-btn {
+  width: 18em;
+  height: 5em;
+  position: relative;
+  margin-top: -20vw;
+  border: none;
+  border-radius: 2.5em;
+  background-color: #ffc5c4;
+  font-family: "HangryHand-Regular";
+  transition: all 300ms ease-in;
+}
+
+#book-movie .cta-btn a, #study-tips .cta-btn a {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: #fff;
+}
+
+#book-movie .cta-btn:hover, #study-tips .cta-btn:hover {
+  background-color: #fb8200;
+  /*
+        a{
+           font-size: 0px;
+        }
+        
+
+        &:hover::after {
+        content: attr(data-hover);
+
+            a{
+                font-size: 40px;
+                color: #fff;
+            }
+        }
+        */
+}
+
+@media only screen and (max-width: 1080px) {
+  #book-movie .cta-btn, #study-tips .cta-btn {
+    width: 15em;
+    height: 4em;
+  }
+  #book-movie .cta-btn a, #study-tips .cta-btn a {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #book-movie .cta-btn, #study-tips .cta-btn {
+    width: 12em;
+    height: 3em;
+  }
+  #book-movie .cta-btn a, #study-tips .cta-btn a {
+    font-size: 1.5em;
+    letter-spacing: 0.25em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #book-movie .cta-btn, #study-tips .cta-btn {
+    width: 9em;
+    height: 2em;
+  }
+  #book-movie .cta-btn a, #study-tips .cta-btn a {
+    font-size: 1em;
+    letter-spacing: 0.25em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #book-movie .cta-btn, #study-tips .cta-btn {
+    width: 7em;
+    height: 1.5em;
+  }
+  #book-movie .cta-btn a, #study-tips .cta-btn a {
+    font-size: 0.75em;
+    letter-spacing: 0.25em;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3a58f;
+  overflow-x: hidden;
+}
+
+.nav-bar {
+  margin-left: 5em;
+  width: 100vw;
+  height: 50%;
+}
+
+.nav-bar .navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-bar .navbar .logo {
+  width: 80px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  justify-content: flex-start;
+}
+
+.nav-bar .navbar nav {
+  text-align: right;
+  justify-content: flex-end;
+  margin-right: 7vw;
+}
+
+.nav-bar .navbar nav .contact {
+  border: 0.25em solid #fb8200;
+  border-radius: 2em;
+  width: 9em;
+  height: 3em;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.25s ease-in;
+}
+
+.nav-bar .navbar nav .contact a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-family: "HangryHand-Regular";
+}
+
+.nav-bar .navbar nav .contact:hover {
+  color: #fff;
+  background-color: #fb8200;
+}
+
+.nav-bar .navbar nav ul li {
+  margin-top: 20px;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.nav-bar .navbar nav ul li .nav-a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-family: "HangryHand-Regular";
+}
+
+.nav-bar .navbar nav ul li .nav-a:hover {
+  color: #fb8200;
+}
+
+.social {
+  margin-top: auto;
+  position: sticky;
+  margin-bottom: 0;
+  width: 5%;
+}
+
+.social li,
+.social a,
+.social i {
+  border: none;
+  background-color: transparent;
+  color: #fef6eb;
+  margin-left: 1.30em;
+  padding-top: 1em;
+  list-style: none;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.social li:hover,
+.social a:hover,
+.social i:hover {
+  background: linear-gradient(135deg, #ffc5c4, #ba3c40);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  transform: translateY(-5px);
+}
+
+.social .vl {
+  border-left: 2px solid #fef6eb;
+  height: 150px;
+  margin-left: 5.75em;
+  padding-top: 20px;
+  margin-top: 40px;
+  position: relative;
+  transition: none;
+}
+
+.social .vl:hover {
+  transform: none;
+}
+
+#book-movie .book-movie-bg {
+  position: relative;
+  width: 100%;
+}
+
+#book-movie .containerr {
+  margin-top: 5%;
+  margin-right: 6vw;
+  position: sticky;
+}
+
+#book-movie .main-txt {
+  float: right;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+#book-movie .cta-btn {
+  letter-spacing: 0.5em;
+  float: right;
+  justify-content: flex-end;
+}
+
+#univ-life .univ-bg-gif {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  position: relative;
+  margin: 10% auto 10% auto;
+}
+
+#study-tips .study-tips-bg {
+  position: relative;
+}
+
+#study-tips .containerr {
+  margin-top: 10%;
+  margin-left: 15vw;
+  position: sticky;
+}
+
+#study-tips .main-txt {
+  text-align: left;
+  /*
+        float: left;
+        text-align: left;
+        justify-content: flex-start;
+        */
+}
+
+#study-tips .cta-btn {
+  margin-top: 2em;
+  letter-spacing: 0.75em;
+}
+
+@media only screen and (max-width: 1080px) {
+  #study-tips .containerr {
+    margin-left: 6vw;
+  }
+  #study-tips .main-txt {
+    margin-bottom: 3%;
+  }
+  #study-tips .cta-btn {
+    margin-top: auto;
+  }
+}
+
+@media only screen and (max-width: 955px) {
+  .nav-bar {
+    margin-left: 1em;
+  }
+  .nav-bar nav {
+    display: none;
+  }
+  .nav-bar .navbar .logo {
+    width: 55px;
+  }
+  .social {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .nav-bar {
+    margin-left: 0.5em;
+  }
+  .nav-bar nav {
+    display: none;
+  }
+  .nav-bar .navbar .logo {
+    width: 35px;
+    margin-left: -.5em;
+    margin-top: 0em;
+  }
+  #study-tips .containerr {
+    margin-top: 8%;
+  }
+  #study-tips .main-txt {
+    margin-bottom: 2%;
+  }
+}
+
+/*
+// 490px query starts here
+@media only screen and (max-width: 490px) {
+    .social {
+        display: none;
+    }
+
+    .nav-bar {
+        margin-left: -4.5em;
+        //padding-left: -1em;
+        margin-top: -13px;
+
+        ul,
+        li,
+        a {
+            display: none;
+        }
+
+        .navbar {
+            .logo {
+                width: 30px;
+            }
+        }
+    }
+
+    #book-movie {
+        .main-txt {
+            font-size: 6vw;
+        }
+
+        .cta-btn {
+            width: 8em;
+            height: 2em;
+            position: relative;
+            margin-top: -5em;
+            letter-spacing: 3px;
+            margin-right: 0.5em;
+
+            a {
+                font-size: 15px;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    #study-tips {
+        .containerr {
+            margin-top: 8%;
+            margin-left: 15vw;
+            position: sticky;
+            //margin-left: 10vw;
+        }
+
+        .main-txt {
+            //margin-top: 13%;
+            //margin-left: 10vw;
+            font-size: 6vw;
+        }
+
+        .cta-btn {
+            width: 8em;
+            height: 2em;
+            position: relative;
+            margin-top: -5em;
+            letter-spacing: 0.25em;
+            margin-left: 0.5em;
+
+            a {
+                font-size: 15px;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+// 490px query ends here
+
+// 380px query starts here
+@media only screen and (max-width: 380px) {
+    .nav-bar {
+        margin-left: -4.5em;
+        //padding-left: -1em;
+        margin-top: -13px;
+
+        ul,
+        li,
+        a {
+            display: none;
+        }
+
+        .navbar {
+            .logo {
+                width: 30px;
+            }
+        }
+    }
+
+    #book-movie {
+        .main-txt {
+            font-size: 5.5vw;
+        }
+
+        .cta-btn {
+            width: 7em;
+            height: 2em;
+            position: relative;
+            margin-top: -4.5em;
+            letter-spacing: 3px;
+            margin-right: 0.5em;
+
+            a {
+                font-size: 15px;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    #study-tips {
+        .containerr {
+            margin-top: 8%;
+            margin-left: 15vw;
+            position: sticky;
+            //margin-left: 10vw;
+        }
+
+        .main-txt {
+            // margin-top: 13%;
+            // margin-left: 15vw;
+            font-size: 6vw;
+        }
+
+        .cta-btn {
+            width: 7em;
+            height: 2em;
+            position: relative;
+            margin-top: -4.5em;
+            letter-spacing: 0.25em;
+            margin-left: 0.5em;
+
+            a {
+                font-size: 15px;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+// 380px query ends here
+*/
+/*# sourceMappingURL=styles.css.map */

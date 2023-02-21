@@ -1,0 +1,583 @@
+// ilalagay pa to sa loob ng stylesheet folder
+
+@import "stylesheet/partials";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $chic-pink;
+    overflow-x: hidden;
+}
+
+// navbar - dan
+.nav-bar {
+    //background-color: transparent;
+    padding-left: 5em;
+    //padding-right: 11em;
+    //margin-right: ;
+    width: 100vw;
+    height: 12%;
+    //padding-left: 5em;
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: auto;
+
+        .logo {
+            width: 80px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            //margin-left: 5em;
+            justify-content: flex-start;
+        }
+
+        nav {
+            text-align: right;
+            justify-content: flex-end;
+            //margin-right: 2vw;
+            margin-right: 3.38em;
+
+            .contact {
+                //background-color: $secondary-color;
+                border: 0.25em solid $secondary-color;
+                border-radius: 2em;
+                width: 9em;
+                height: 3em;
+                text-align: center;
+                justify-content: center;
+                //padding-top: .15em;
+                transition: all 0.25s ease-in;
+
+                a {
+                    text-decoration: none;
+                    color: $primary-color;
+                    font-size: 30px;
+                    font-family: $primary-font;
+                }
+
+                &:hover {
+                    background-color: $secondary-color;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+
+            ul li {
+                margin-top: 20px;
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 50px;
+
+                .nav-a {
+                    @extend %scrollNav;
+                }
+
+                .nav-b {
+                    @extend %scrollNav;
+                }
+
+                .nav-c {
+                    @extend %scrollNav;
+                }
+            }
+        }
+    }
+}
+
+// .tips-header{
+//     margin-top: -.48em;
+// }
+
+// .tips-header{
+//     margin-top: -6em;
+// }
+
+// social media icons
+
+.social {
+    margin-top: auto;
+    position: sticky;
+    margin-bottom: 0;
+    width: 5%;
+    //z-index: 2;
+
+    li,
+    a,
+    i {
+        border: none;
+        background-color: transparent;
+        color: $peachy;
+        margin-left: 1.3em;
+        padding-top: 1em;
+        list-style: none;
+        position: relative;
+        //z-index: 2;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+            //color: $primary-color;
+            background: linear-gradient(135deg, $primary-color, $sultry-red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            //transform: scale(.98);
+            transform: translateY(-5px);
+        }
+    }
+
+    .vl {
+        border-left: 2px solid $peachy;
+        height: 150px;
+        margin-left: 5.75em;
+        padding-top: 20px;
+        margin-top: 40px;
+        position: relative;
+        //z-index: 2;
+        transition: none;
+
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+.tips-header {
+    padding-top: 5%;
+}
+
+// SUBPAGE - STUDY TIPS
+.tips-header {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#study-tips {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    animation: fadeIn;
+    animation-duration: 3s;
+    animation: fadeIn;
+    animation-duration: 3s;
+
+    li {
+        list-style: none;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(0.98);
+            transform: translateY(-5px);
+        }
+    }
+
+    .tips-list {
+        position: relative;
+        margin-top: 6%;
+        display: flex;
+        justify-content: center;
+
+        .tip-container {
+            background-color: $primary-color;
+            margin-left: 3em;
+            width: 25em;
+            padding-top: 1.75em;
+            margin-top: 1em;
+
+            img {
+                object-fit: contain;
+                width: 20em;
+                height: 20em;
+            }
+
+            .tip-txt {
+                font-family: $primary-font;
+
+                h3 {
+                    font-size: 2.5em;
+                    color: $secondary-color;
+                    margin-top: 5%;
+                    padding-left: 0.5em;
+                }
+
+                p {
+                    font-size: 1.65em;
+                    color: #fff;
+                    line-height: 1em;
+                    width: 13em;
+                    padding-left: 0.75em;
+                }
+            }
+        }
+    }
+}
+
+// FOOTER STARTS HERE
+.footer {
+    padding-bottom: 8em;
+    padding-top: 11.75em;
+    animation: fadeIn;
+    animation-duration: 3s;
+    background-color: $primary-color;
+    height: 100vh;
+
+    .footer-con {
+        text-align: center;
+
+        h1 {
+            color: $true-blue;
+            font-family: $primary-font;
+            font-size: 10em;
+            position: relative;
+            height: 1.25em;
+        }
+
+        p {
+            color: #fff;
+            font-family: $primary-font;
+            font-size: 2.5em;
+        }
+
+        .cta-btn {
+            @extend %cta-btn;
+            background-color: $secondary-color;
+            margin-top: 3vw;
+
+            a {
+                font-size: 2.5em;
+                text-decoration: none;
+                color: #fff;
+            }
+
+            &:hover {
+                background-color: rgba(251, 130, 0, 0.8);
+            }
+        }
+    }
+}
+
+// MEDIA QUERY STARTS HERE
+// 1400px query starts here
+@media only screen and (max-width: 1400px) {
+    .footer {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+
+        .footer-con {
+            p {
+                color: #fff;
+                font-family: $primary-font;
+                font-size: 2.25em;
+            }
+        }
+    }
+}
+
+// 955px query starts here
+@media only screen and (max-width: 955px) {
+    .nav-bar {
+        margin-left: 1em;
+
+        nav {
+            display: none;
+        }
+
+        .navbar {
+            .logo {
+                width: 55px;
+                margin-left: -5em;
+            }
+        }
+    }
+
+    .social {
+        display: none;
+    }
+
+    // .tips-header{
+    //     margin-top: -2.75em;
+    // }
+
+    .footer {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-bottom: 45em;
+        //padding-top: 10em;
+    }
+}
+// 955px query ends here
+
+// 810px query starts here
+@media only screen and (max-width: 810px) {
+    .footer {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-bottom: 45em;
+
+        .footer-con {
+            h1 {
+                // height: 2em;
+                font-size: 8.5em;
+                height: 1.25em;
+            }
+
+            p {
+                font-size: 2.25em;
+            }
+
+            .cta-btn {
+                width: 17em;
+                height: 4.5em;
+
+                a {
+                    font-size: 2em;
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                &:hover {
+                    background-color: rgba(251, 130, 0, 0.8);
+                }
+            }
+        }
+    }
+}
+// 810px query ends here
+
+// 680px query starts here
+@media only screen and (max-width: 680px) {
+    .footer {
+        .footer-con {
+            h1 {
+                //height: 5em;
+                font-size: 8em;
+                height: 1.25em;
+            }
+
+            p {
+                color: #fff;
+                font-family: $primary-font;
+                font-size: 2em;
+                line-height: 1.15em;
+            }
+        }
+    }
+}
+
+// 645px query starts here
+@media only screen and (max-width: 645px) {
+    .footer {
+        padding-bottom: 25em;
+
+        .footer-con {
+            h1 {
+                //height: 5em;
+                font-size: 7em;
+                height: 1.25em;
+            }
+
+            p {
+                color: #fff;
+                font-family: $primary-font;
+                font-size: 1.75em;
+                line-height: 1.15em;
+            }
+        }
+    }
+}
+
+// 570px query starts here
+@media only screen and (max-width: 570px) {
+    .tips-header {
+        padding-top: 3.25em;
+    }
+
+    .footer {
+        .footer-con {
+            h1 {
+                font-size: 6em;
+                height: 1.25em;
+            }
+
+            p {
+                color: #fff;
+                font-family: $primary-font;
+                font-size: 1.75em;
+                line-height: 1.15em;
+            }
+
+            .cta-btn {
+                width: 16em;
+                height: 4em;
+
+                a {
+                    font-size: 2em;
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                &:hover {
+                    background-color: rgba(251, 130, 0, 0.8);
+                }
+            }
+        }
+    }
+}
+
+// 495px query starts here
+@media only screen and (max-width: 495px) {
+    #study-tips {
+        .tips-list {
+            .tip-container {
+                width: 18em;
+                padding-top: 1.5em;
+                margin-left: 1em;
+
+                img {
+                    object-fit: contain;
+                    width: 15em;
+                    height: 15em;
+                }
+
+                .tip-txt {
+                    margin-left: -1em;
+                    h3 {
+                        font-size: 1.75em;
+                    }
+
+                    p {
+                        font-size: 1.25em;
+                        width: 13em;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding-bottom: 15em;
+
+        .footer-con {
+            h1 {
+                font-size: 5em;
+                height: 1.25em;
+            }
+
+            p {
+                color: #fff;
+                font-family: $primary-font;
+                font-size: 1.5em;
+                line-height: 1.15em;
+            }
+
+            .cta-btn {
+                width: 15em;
+                height: 3.75em;
+
+                a {
+                    font-size: 1.85em;
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                &:hover {
+                    background-color: rgba(251, 130, 0, 0.8);
+                }
+            }
+        }
+    }
+}
+
+// 425px query starts here
+@media only screen and (max-width: 425px) {
+    #study-tips {
+        .tips-list {
+            .tip-container {
+                width: 15em;
+                padding-top: 1.5em;
+                margin-left: 1em;
+
+                img {
+                    object-fit: contain;
+                    width: 12em;
+                    height: 12em;
+                }
+
+                .tip-txt {
+                    margin-left: -1em;
+                    h3 {
+                        font-size: 1.75em;
+                    }
+
+                    p {
+                        font-size: 1em;
+                        width: 13em;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        //margin-top: -10em;
+        padding-top: 10em;
+        padding-bottom: 5em;
+
+        .footer-con {
+            h1 {
+                font-size: 3.5em;
+                height: 1.25em;
+            }
+
+            p {
+                color: #fff;
+                font-family: $primary-font;
+                font-size: 1em;
+                line-height: 1.15em;
+            }
+
+            .cta-btn {
+                width: 10em;
+                height: 2.5em;
+
+                a {
+                    font-size: 1.15em;
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                &:hover {
+                    background-color: rgba(251, 130, 0, 0.8);
+                }
+            }
+        }
+    }
+}
+// 425px ends here
+
+// 320px query starts here
+@media only screen and (max-width: 320px) {
+    .footer {
+        padding-top: 15em;
+        padding-bottom: 5em;
+
+        .footer-con {
+            h1 {
+                font-size: 3em;
+                height: 1.25em;
+            }
+        }
+    }
+}
