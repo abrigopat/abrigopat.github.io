@@ -1,0 +1,138 @@
+@font-face {
+    font-family: HangryHand-Regular;
+    src: url(/font/HangryHand-Regular.ttf);
+}
+
+@font-face {
+    font-family: SilkFlowerDemo-Regular;
+    src: url(/font/SilkFlowerDemo-Regular.otf);
+}
+
+$primary-color: #ffc5c4;
+$secondary-color: #fb8200;
+$peachy: #fef6eb;
+$funky-yellow: #ffb92b;
+$sultry-red: #ba3c40;
+$chic-pink: #f3a58f;
+$true-blue: #43a3a2;
+
+$primary-font: "HangryHand-Regular";
+$secondary-font: "SilkFlowerDemo-Regular";
+
+%main-txt {
+    display: flex;
+    position: relative;
+    //margin-right: -10%;
+    //margin-left: 1200px;
+    //margin-top: -900px;
+    font-family: $secondary-font;
+    color: $peachy;
+    //line-height: 0.95em;
+    letter-spacing: 20%;
+    font-weight: bold;
+    font-size: 7.5vw;
+    line-height: 1.15em;
+    letter-spacing: 5px;
+    // z-index: 2;
+    animation: bounce;
+    animation-duration: 3s;
+    //overflow: hidden;
+    margin-bottom: auto;
+    margin-top: -6.5em;
+}
+
+%cta-btn {
+    width: 18em;
+    height: 5em;
+    position: relative;
+    //margin-bottom:auto;
+    margin-top: -20vw; // not responsive to
+    //z-index: 3;
+    border: none;
+    border-radius: 2.5em;
+    background-color: $primary-color;
+    font-family: $primary-font;
+    transition: all 300ms ease-in;
+
+    a {
+        font-size: 2.5em;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: $secondary-color;
+
+        /*
+        a{
+           font-size: 0px;
+        }
+        
+
+        &:hover::after {
+        content: attr(data-hover);
+
+            a{
+                font-size: 40px;
+                color: #fff;
+            }
+        }
+        */
+    }
+}
+
+// MEDIA QUERY STARTS HERE
+// 1080px query starts here
+@media only screen and (max-width: 1080px) {
+    %cta-btn-res {
+        width: 15em;
+        height: 4em;
+
+        a {
+            font-size: 2em;
+        }
+    }
+}
+// 1080px query ends here
+
+// 768px query starts here
+@media only screen and (max-width: 768px) {
+    %cta-btn-res {
+        width: 12em;
+        height: 3em;
+
+        a {
+            font-size: 1.5em;
+            letter-spacing: 0.25em;
+        }
+    }
+}
+// 768px query ends here
+
+// 480px query starts here
+@media only screen and (max-width: 480px) {
+    %cta-btn-res {
+        width: 9em;
+        height: 2em;
+
+        a {
+            font-size: 1em;
+            letter-spacing: 0.25em;
+        }
+    }
+}
+// 480px query ends here
+
+// 320px query starts here
+@media only screen and (max-width: 320px) {
+    %cta-btn-res {
+        width: 7em;
+        height: 1.5em;
+
+        a {
+            font-size: 0.75em;
+            letter-spacing: 0.25em;
+        }
+    }
+}
+// 320px query ends here
